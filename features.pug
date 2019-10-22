@@ -1,0 +1,34 @@
+extends main.pug
+block inHead
+    link(href="styles/features.css" rel="stylesheet")
+    script(src="highlight.pack.js")
+    link(href="styles/highlights/shades-of-purple.css" rel="stylesheet")
+    script hljs.initHighlightingOnLoad();
+
+block content
+    div.content-body
+        h1.text-center Features
+        section.container
+            h2 Intuitive and clean syntax
+            div.row
+                div.col
+                    h4 Taking inspiration from multiple languages, the Nim syntax is easily understood and results in code that can be modified very effectively.
+                    ul
+                        li Indentation significant syntax
+                        li Multiple constructs inspired by Python
+                        li Multi-line lambdas
+                        li Oberon-inspired visibility markers
+                        li Pascal-inspired type sections for leaner definitions
+                div.col
+                    include includes/code.pug
+            hr.my-4
+        section.container
+            h2.text-center Support for multiple operating systems
+            div.d-flex.justify-content-center
+                div.img-container
+                    img(src="src/img/win-logo.png" alt="")
+                div.img-container
+                    img(src="src/img/Linux-logo.png" alt="")
+            div.text-center
+                |Nim supports every mainstream operating system and platform as well as multiple niche platforms. 
+                |We take pride in supporting all three major operating systems fully.

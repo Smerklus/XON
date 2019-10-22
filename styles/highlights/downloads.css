@@ -1,0 +1,58 @@
+body {
+  font-family: Roboto, "Helvetica Neue";
+  margin: 0px;
+}
+.nav-logo-img {
+  width: 24px;
+  height: 24px;
+}
+.nav-logo {
+  display: inline-block;
+  padding: 0 11px 0;
+}
+.nav-logo a {
+  padding: 0;
+}
+.nav-logo a:hover {
+  padding: 0;
+  background: none;
+}
+.nav-bar {
+  color: white;
+  height: 52px;
+  background: #2d2d2d;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-bar-menu {
+  float: right;
+  margin: 0px;
+  padding: 0 40px;
+}
+.menu-item {
+  display: inline-block;
+  font-family: Roboto, "Helvetica Neue";
+}
+
+a {
+  text-decoration: none;
+}
+a {
+  padding: 18px;
+  color: white;
+}
+a:hover {
+  background: grey;
+  color: white;
+}
+section.footer {
+  display: flex;
+  align-items: center;
+  background: #5d0000;
+  padding: 20px 0;
+}
+section.content {
+  padding-left: 10pt;
+  margin-bottom: 50px;
+}

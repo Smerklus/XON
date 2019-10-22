@@ -1,0 +1,29 @@
+<div class="code"><pre><code class="cpp"># dist/app.c transpilation content: <br/><br/>#
+include &lt;stadio.h&gt;<br/>#
+include &quot;stdlib.h&quot;<br/>#
+include &lt;wchar.h&gt;<br/>#
+include &lt;locale.h&gt;<br/>#
+include &lt;fcntl.h&gt;<br/>#
+include &lt;io.h&gt;int 
+main() {<br/>   _setmode
+(
+_fileno
+(stdout), 
+0x00020000
+);
+<br/>   int 
+a = 
+5 
++ 
+6 ;<br/>   int 
+b = a +
+3 ;<br/>   wchar_t 
+* s = L"Привет 日本国\n";<br/>   wprintf
+(s);<br/>   return 
+0;<br/><p>}</p></code></pre><pre><code class="cpp"># app.xon source content: <br/><br/>a: 
+5 
++ 
+6<br/>b: a + 
+3
+<br/>s: 'Привет 日本国'<br/>wprintf
+(s)</code></pre></div>

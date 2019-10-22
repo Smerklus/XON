@@ -1,0 +1,66 @@
+extends main.pug
+block inHead
+    script(src="script.js" type='text/javascript')
+    link(href="styles/documentation.css" rel="stylesheet")
+
+block content
+    div.content-body
+        h1.text-center Documentation
+        section.container
+            div.row
+                div.col
+                    h2 Standards &amp Guides
+                    h3 
+                        a(href='#') Standard Library
+                    p Provides a listing and description of all the modules in the standard library.
+                    h3 
+                        a(href='#') Language Manual
+                    p The Nim programming language specification.
+                    h3 
+                        a(href='#') Nim Style Guide
+                    p The stylistic conventions that Nim's official projects adhere to.
+                    h3 
+                        a(href='#') Nimble Package Manager
+                    p Explains configuration and usage of Nimble package manager, including creating and publishing your own packages.
+                    h3 
+                        a(href='#') Compiler User Guide
+                    p Outlines the commands and command line flags the Nim compiler supports. Explains how the Nim compiler can be configured and describes how to cross-compile, generate DLLs, and more.
+                    h3 
+                        a(href='#') NimScript
+                    p Describes the subset of Nim used for configuring Nim and specifying Nimble packages.
+                    h3 
+                        a(href='#') Nim Backend Integration
+                    p Describes the various backends supported by Nim, including C, C++, Obj C, and JS. It also explains how to interface with libraries written in those languages.
+                    h3 
+                        a(href='#') Bleeding Edge Docs
+                    p Latest docs built from the Nim devel branch. Rebuilt on every commit.
+                div.col
+                    h2 Search Options
+                    h3 
+                        a(href='#') Searchable index
+                    p All Nim documents and modules in one place. Use Ctrl/Cmd+F.
+                    h2 Tools & Features
+                    h3 
+                        a(href='#') Source Code Filters
+                    p The Nim compiler supports source code filters as a simple yet powerful builtin templating system.
+                    h3 
+                        a(href='#') Tools Documentation
+                    p Description of some tools that come with the standard distribution.
+                    h2 Internal Details
+                    h3 
+                        a(href='#') Garbage Collector
+                    p Additional documentation about Nim's GC and how to operate it in a realtime setting.
+                    h3 
+                        a(href='#') Internal Documentation
+                    p The internal documentation describes how the compiler is implemented. Read this if you want to hack the compiler.
+                    h2 Other
+                    h3 
+                        a(href='#') Frequently Asked Questions
+                    h3 
+                        a(href='#') Wiki
+                    h3 
+                        a(href='#') Nimble Package Directory
+                    h3 
+                        a(href='#') Docker images (unofficial)
+
+

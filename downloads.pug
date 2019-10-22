@@ -1,0 +1,18 @@
+extends main.pug
+block inHead
+    script(src="script.js" type='text/javascript')
+    link(href="styles/downloads.css" rel="stylesheet")
+
+block content
+    div.content-body
+        h1.text-center Install XON
+        section.container
+            div.row 
+                div.col.text-center
+                    img(src="src/img/win-logo.png", alt="")
+                    div.text-center
+                        h3 Windows
+                div.col.text-center
+                    img(src="src/img/Linux-logo.png", alt="")
+                    div.text-center
+                        h3 Linux

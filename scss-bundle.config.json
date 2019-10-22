@@ -1,0 +1,9 @@
+{
+    "bundlerOptions": {
+        "entryFile": "./tests/cases/simple/main.scss",
+        "rootDir": "./tests/cases/simple/",
+        "outFile": "./bundled.scss",
+        "ignoreImports": ["~@angular/.*"],
+        "logLevel": "silent"
+    }
+}

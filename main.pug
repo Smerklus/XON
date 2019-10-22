@@ -1,0 +1,29 @@
+- var pageTitle = 'Xon Language'
+
+doctype html
+html(lang="en")
+    head
+        block inHead
+        include includes/head.pug
+    body
+        header
+            nav.navbar.navbar-expand-md.navbar-dark.bg-primary.justify-content-between.header.elevation-4
+                div.nav-logo
+                    a.navbar-brand.d-inline-block.align-center.nav-link.nav-item.text-white(href="mainPage.html")
+                        img.nav-logo-img(src="src/img/54704555.png" width="24" height="24") 
+                        | 
+                        |XON
+                button.navbar-toggler(type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation")
+                    span.navbar-toggler-icon
+                div.mr-sm-2.collapse.navbar-collapse(id="navbarSupportedContent")
+                    a.nav-link.nav-item.text-white(href="blog.html") Blog
+                    a.nav-link.nav-item.text-white(href="features.html") Features
+                    a.nav-link.nav-item.text-white(href="downloads.html") Download
+                    a.nav-link.nav-item.text-white(href="documentation.html") Documentation
+        block content
+        block footer
+            section.footer.bg-primary
+                div.content-footer
+                    img(src="src/img/icons8.png" alt="github-icon")
+                    a.text-white(href="https://github.com/xon-lang/xonxon-lang/xon") xon-lang/xon
+        script(src='scripts/script.js')

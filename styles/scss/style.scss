@@ -1,0 +1,79 @@
+@import '../../lib/bootstrap/scss/functions';
+@import '../../lib/bootstrap/scss/variables';
+@import 'elevation.scss';
+
+$primary-color: #2d2b57;
+$primary-light-color: rgb(107, 106, 106);
+$primary-dark-color: rgb(32, 32, 32);
+
+$theme-colors: (
+  primary: $primary-color
+);
+
+@import '../../lib/bootstrap/scss/bootstrap.scss';
+
+
+@font-face{
+  font-family: "Roboto";
+  src: url("../assets/fonts/Roboto/Roboto-Regular.ttf")
+}
+
+body {
+  font-family: Roboto, "Helvetica Neue";
+  margin: 0px;
+}
+
+.body-content {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+.container{
+  padding-top: 20px;
+}
+pre {
+  margin: 0;
+  padding: 0 1em;
+  margin-bottom: 30px;
+}
+.description-lang {
+  padding-right: 40px;
+  margin: 0 0 1em;
+}
+.content {
+  width: inherit;
+  margin: 0 20px;
+}
+.content-body{
+  padding-top: 56px
+}
+.content-footer{
+  margin: 0 16px;
+  padding: 0 16px;
+}
+section.footer {
+  border-top: 4px solid #616c8e;
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  padding: 20px 0;
+}
+.text-container-center{
+  padding: 20px 0;
+  width: 60%;
+  text-align: center;
+  margin: auto;
+}
+.navbar-collapse{
+  flex-grow: 0;
+}
+
+.header {
+  z-index: 5;
+	position: fixed;
+	top: 0; left: 0;
+	width: 100%;
+	transition: all .3s ease;
+}
+.header.out {
+	transform: translateY(-100%);
+}

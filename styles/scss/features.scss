@@ -1,0 +1,21 @@
+@import "style.scss";
+
+h1 {
+  padding-top: 20px;
+}
+
+.content-body {
+  padding-top: 56px;
+}
+
+.code {
+  height: 300px;
+  overflow: auto;
+}
+
+.img-container {
+  img {
+    height: 80px;
+    width: 80px;
+  }
+}

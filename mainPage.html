@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link href="styles/index.css" rel="stylesheet">
+    <script src="highlight.pack.js"></script>
+    <link href="styles/highlights/shades-of-purple.css" rel="stylesheet">
+    <script>hljs.initHighlightingOnLoad();</script>
+    <title>Xon Language</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8=" crossorigin="anonymous"></script>
+    <script src="lib/bootstrap/dist/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-md navbar-dark bg-primary justify-content-between header elevation-4">
+            <div class="nav-logo"><a class="navbar-brand d-inline-block align-center nav-link nav-item text-white"
+                    href="mainPage.html"><img class="nav-logo-img" src="src/img/54704555.png" width="24" height="24">
+                    XON</a></div><button class="navbar-toggler" type="button" data-toggle="collapse"
+                data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="mr-sm-2 collapse navbar-collapse" id="navbarSupportedContent"><a
+                    class="nav-link nav-item text-white" href="blog.html">Blog</a><a
+                    class="nav-link nav-item text-white" href="features.html">Features</a><a
+                    class="nav-link nav-item text-white" href="downloads.html">Download</a><a
+                    class="nav-link nav-item text-white" href="documentation.html">Documentation</a></div>
+        </nav>
+    </header>
+    <div class="content-body">
+        <section class="container">
+            <div class="content">
+                <h2>Efficient, expressive, elegant</h2>
+                <h4>Nim is a statically type.d compiled systems programming language. It combines successful concepts
+                    from mature languages like Python, Ada and Modula.</h4>
+                <div class="row">
+                    <div class="col-md">
+                        <h5>Efficient</h5>
+                        <ul>
+                            <li> <span>Nim generates native dependency-free executables, not dependent on a virtual
+                                    machine,
+                                    which are small and allow easy redistribution.</span></li>
+                            <li> <span>The Nim compiler and the generated executables support all major platforms like
+                                    Windows,
+                                    Linux, BSD and macOS.</span></li>
+                            <li> <span>Fast deferred reference counting memory management that supports real-time
+                                    systems. </span></li>
+                            <li> <span>Modern concepts like zero-overhead iterators and compile-time evaluation of
+                                    user-defined
+                                    functions, in combination with the preference of value-based datatypes allocated on
+                                    the
+                                    stack, lead
+                                    to extremely performant code.</span></li>
+                            <li><span>Support for various backends: it compiles to C, C++ or JavaScript so that Nim can
+                                    be
+                                    used for all backend and frontend needs.</span></li>
+                        </ul>
+                        <h5>Expressive</h5>
+                        <ul>
+                            <li> <span>Nim is self-contained: the compiler and the standard library are implemented in
+                                    Nim</span></li>
+                            <li> <span>Nim has a powerful macro system which allows direct manipulation of the AST,
+                                    offering nearly unlimited opportunities.</span></li>
+                        </ul>
+                        <h5>Elegant</h5>
+                        <ul>
+                            <li> <span>Macros cannot change Nim's syntax because there is no need for it — the syntax is
+                                    flexible enough.</span></li>
+                            <li><span>Modern type system with local type inference, tuples, generics and sum
+                                    types</span></li>
+                            <li><span>Statements are grouped by indentation but can span multiple lines.</span></li>
+                        </ul>
+                    </div>
+                    <div class="col-md">
+                        <div class="code">
+                            <pre><code class="cpp elevation-1">#dist/app.c transpilation content: <br><br>#include &lt;stadio.h&gt;<br>#include &quot;stdlib.h&quot;<br>#include &lt;wchar.h&gt;<br>#include &lt;locale.h&gt;<br>#include &lt;fcntl.h&gt;<br>#include &lt;io.h&gt;<br>
+int main() {<br>   _setmode(_fileno(stdout), 0x00020000);
+<br>   int a = 5 + 6;<br>   int b = a + 3;<br>   wchar_t * s = L"Привет 日本国\n";<br>   wprintf(s);<br>   return 0;<br>}</code></pre>
+                            <pre><code class="cpp elevation-1"># app.xon source content: <br><br>a: 5 + 6<br>b: a + 3
+<br>s: 'Привет 日本国'<br>wprintf(s)</code></pre>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-4">
+        </section>
+        <section class="container">
+            <h1 class="text-center">Recent articles</h1>
+            <div class="row">
+                <div class="col-md">
+                    <div class="text-info"><time datetime="2019-09-08">Sep 8, 2019</time></div>
+                    <h2> <a href="#">Version 1.0 released</a></h2>
+                    <div>The XON team is happy to announce last update which include new README.md</div>
+                </div>
+                <div class="col-md">
+                    <div class="text-info"><time datetime="2019-09-08">Sep 2, 2019</time></div>
+                    <h2> <a href="#">Version 1.0 released</a></h2>
+                    <div>We proud to announce 1.0 version</div>
+                </div>
+            </div>
+            <div class="text-center"><a class="btn btn-primary mx-auto elevation-2" href="blog.html">All articles</a>
+            </div>
+            <hr class="my-4">
+        </section>
+        <section class="container">
+            <h1 class="text-center">Featured projects</h1>
+            <div class="row">
+                <div class="col-md">
+                    <h3> <a href="#">Karax</a></h3><span class="text-info">SPA framework</span>
+                    <p>Karax is a framework for developing single page applications in Nim. Leverage Nim's macro system
+                        to produce a framework that allows for the development of applications that are boilerplate
+                        free.</p>
+                </div>
+                <div class="col-md">
+                    <h3> <a href="#">Nimbus</a></h3><span class="text-info">Ethereum client</span>
+                    <p>Nimbus aims to be a sharding client for Ethereum 2.0 Blockchain. Ethereum will potentially be on
+                        embedded systems, Nimbus will be designed to perform well on IoT and personal mobile devices.
+                    </p>
+                </div>
+            </div>
+            <div class="text-center"><a class="btn btn-primary mx-auto elevation-2" href="blog.html">Find more
+                    projects</a></div>
+            <hr class="my-4">
+        </section>
+        <section class="container">
+            <h1 class="text-center">Learn XON today</h1>
+            <div class="text-container-center">
+                <h5>Build command-line applications, games, web servers, kernels and everything else in between. Nim has
+                    a low barrier to entry and offers powerful features you won't find in many mainstream programming
+                    languages.</h5>
+            </div>
+            <div class="text-center"><a class="btn btn-primary mx-auto elevation-2" href="blog.html">Get started now</a>
+            </div>
+        </section>
+    </div>
+    <section class="footer bg-primary">
+        <div class="content-footer"><img src="src/img/icons8.png" alt="github-icon"><a class="text-white"
+                href="https://github.com/xon-lang/xonxon-lang/xon">xon-lang/xon</a></div>
+    </section>
+    <script src="scripts/script.js"></script>
+</body>
+
+</html>

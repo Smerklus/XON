@@ -1,0 +1,56 @@
+div.code
+    pre
+        code.cpp.elevation-1
+            |#dist/app.c transpilation content: 
+            br
+            |
+            br
+            |#include 
+            ='<stadio.h>'
+            br
+            |#include 
+            ='"stdlib.h"' 
+            br
+            |#include 
+            ='<wchar.h>' 
+            br
+            |#include 
+            ='<locale.h>' 
+            br
+            |#include 
+            ='<fcntl.h>' 
+            br
+            |#include 
+            ='<io.h>'
+            br
+            |
+            | int main() {
+            br
+            |    _setmode(_fileno(stdout), 0x00020000);
+            |
+            br
+            |    int a = 5 + 6;
+            br
+            |    int b = a + 3;
+            br
+            |    wchar_t * s = L"Привет 日本国\n";
+            br
+            |    wprintf(s);
+            br
+            |    return 0;
+            br
+            | }
+    pre
+        code.cpp.elevation-1
+            | # app.xon source content: 
+            br
+            |
+            br
+            |a: 5 + 6
+            br
+            |b: a + 3
+            |
+            br
+            | s: 'Привет 日本国'
+            br
+            | wprintf(s)
